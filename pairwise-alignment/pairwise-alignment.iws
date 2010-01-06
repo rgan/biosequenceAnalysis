@@ -57,16 +57,43 @@
       <file leaf-file-name="NeedlemanWunschGlobalAlignmentTest.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/NeedlemanWunschGlobalAlignmentTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="24" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
+            <state line="39" column="8" selection-start="1110" selection-end="1636" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NeedlemanWunschGlobalAlignment.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NeedlemanWunschGlobalAlignment.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NeedlemanWunschGlobalAlignment.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="14" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.36098656">
+            <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmithWatermanLocalAlignment.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SmithWatermanLocalAlignment.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="18" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackPointer.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BackPointer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="31" selection-start="128" selection-end="132" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmithWatermanLocalAlignmentTest.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/SmithWatermanLocalAlignmentTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="52" selection-start="138" selection-end="138" vertical-scroll-proportion="0.17798595">
               <folding />
             </state>
           </provider>
@@ -190,8 +217,8 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.NeedlemanWunschGlobalAlignmentTest.shouldComputeOptimalAlignment">
-    <tempConfiguration default="false" name="NeedlemanWunschGlobalAlignmentTest.shouldComputeOptimalAlignment" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.SmithWatermanLocalAlignmentTest">
+    <tempConfiguration default="false" name="SmithWatermanLocalAlignmentTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <pattern>
         <option name="PATTERN" value="org.biosequenceanalysis.tests.*" />
         <option name="ENABLED" value="true" />
@@ -200,9 +227,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="org.biosequenceanalysis.tests.NeedlemanWunschGlobalAlignmentTest" />
-      <option name="METHOD_NAME" value="shouldComputeOptimalAlignment" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="org.biosequenceanalysis.tests.SmithWatermanLocalAlignmentTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -238,6 +265,32 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -271,7 +324,7 @@
       <envs />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.NeedlemanWunschGlobalAlignmentTest.shouldComputeOptimalAlignment" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SmithWatermanLocalAlignmentTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -318,7 +371,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="24" width="1354" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
@@ -335,7 +388,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29745042" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29745042" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
@@ -408,16 +461,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/NeedlemanWunschGlobalAlignmentTest.scala">
+    <entry file="file://$PROJECT_DIR$/src/SmithWatermanLocalAlignmentApp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="24" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
+        <state line="2" column="7" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NeedlemanWunschGlobalAlignment.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="14" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.36098656">
+        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackPointer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="128" selection-end="132" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/NeedlemanWunschGlobalAlignmentTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="8" selection-start="1110" selection-end="1636" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SmithWatermanLocalAlignment.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SmithWatermanLocalAlignmentTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="52" selection-start="138" selection-end="138" vertical-scroll-proportion="0.17798595">
           <folding />
         </state>
       </provider>
