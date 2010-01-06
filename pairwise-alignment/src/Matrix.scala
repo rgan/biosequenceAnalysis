@@ -27,6 +27,14 @@ class Matrix(rowSequence :List[String], columnSequence :List[String]) {
      return this.rowSequence.length
   }
 
+  def rowSequenceValueAt(i : Int) : String = {
+    return this.rowSequence(i)
+  }
+
+  def columnSequenceValueAt(i : Int) : String = {
+    return this.columnSequence(i)
+  }
+
   def noCols() : Int = {
     return this.columnSequence.length
   }

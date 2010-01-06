@@ -3,6 +3,7 @@ package org.biosequenceanalysis.tests
 import junit.{Before, Test}
 import org.scalatest.junit.AssertionsForJUnit
 import org.junit.Assert._
+import BackPointer._
 
 class NeedlemanWunschGlobalAlignmentTest extends AssertionsForJUnit {
     private var nwGlobalAlignment:NeedlemanWunschGlobalAlignment = _
@@ -15,20 +16,27 @@ class NeedlemanWunschGlobalAlignmentTest extends AssertionsForJUnit {
     }
 
     @Test def shouldReturnMultipleOfGapPenaltyForTopRowAndLeftColumn() {
-            assertEquals(0, nwGlobalAlignment.score(0,0))
-      assertEquals(-8, nwGlobalAlignment.score(0,1))
-      assertEquals(-16, nwGlobalAlignment.score(0,2))
-      assertEquals(-8, nwGlobalAlignment.score(1,0))
-      assertEquals(-80, nwGlobalAlignment.score(0,10))
-      assertEquals(-56, nwGlobalAlignment.score(7,0))
+      assertEquals((0, Left), nwGlobalAlignment.score(0,0))
+      assertEquals((-8, Left), nwGlobalAlignment.score(0,1))
+      assertEquals((-16, Left), nwGlobalAlignment.score(0,2))
+      assertEquals((-8, Top ), nwGlobalAlignment.score(1,0))
+      assertEquals((-80, Left), nwGlobalAlignment.score(0,10))
+      assertEquals((-56, Top), nwGlobalAlignment.score(7,0))
     }
 
     @Test def shouldReturnScoreForRow1Col1() {
-      assertEquals(-2, nwGlobalAlignment.score(1,1))
+      assertEquals((-2, Diagonal), nwGlobalAlignment.score(1,1))
     }
 
-    @Test def shouldComputeMaxScore() {
-      assertEquals(1, nwGlobalAlignment.computeMaximumScore)
+    @Test def shouldComputeOptimalAlignment() {
+      val result = nwGlobalAlignment.find
+      val score = result._1
+      val alignments = result._2
+      assertEquals(1, score)
+      assertEquals(List("-", "-", "P", "-", "A", "W", "-", "H", "E", "A", "E"),
+                  alignments._1)
+      assertEquals(List("H", "E", "A", "G", "A", "W", "G", "H", "E", "-", "E"),
+                  alignments._2)
     }
 }
 
