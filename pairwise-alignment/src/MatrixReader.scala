@@ -4,11 +4,11 @@ import io.Source
 
 object MatrixReader {
 
-  def fromFile(filePath : String) : Matrix = {
+  def fromFile(filePath : String) : Matrix[Int] = {
      val lines : List[String] = Source.fromFile(filePath).getLines.toList
      val rowSequence = parseSequence(lines.head)
      val colSequence = parseSequence(lines.tail.head)
-     var matrix:Matrix = new Matrix(rowSequence, colSequence)
+     var matrix = new Matrix(rowSequence, colSequence, 0)
      var row = 0
      for(line <- lines.tail.tail) {
        val rowValues = parseSequence(line)

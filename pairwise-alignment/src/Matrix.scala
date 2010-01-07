@@ -1,25 +1,25 @@
 package org.biosequenceanalysis
 
-class Matrix(rowSequence :List[String], columnSequence :List[String]) {
+class Matrix[T](rowSequence :List[String], columnSequence :List[String], initValue : T) {
   private val this.rowSequence = rowSequence
   private val this.columnSequence = columnSequence
-  private var values = new Array[Array[Int]](noRows,noCols)
+  private var values = new Array[Array[T]](noRows,noCols)
 
   for(i <- 0 to noRows-1) {
       for(j <- 0 to noCols-1) {
-          values(i)(j) = 0
+          values(i)(j) = initValue
       }
   }
 
-  def valueFor(sRow : String, sCol : String) : Int = {
+  def valueFor(sRow : String, sCol : String) : T = {
     return values(indexFor(sRow, true))(indexFor(sCol, false))
   }
 
-  def setValueAt(row : Int, col : Int, value : Int) : Unit = {
+  def setValueAt(row : Int, col : Int, value : T) : Unit = {
      values(row)(col) = value
   }
 
-  def getValueAt(row : Int, col : Int) : Int = {
+  def getValueAt(row : Int, col : Int) : T = {
      return values(row)(col)
   }
 

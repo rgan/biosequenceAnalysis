@@ -16,7 +16,7 @@ class NeedlemanWunschGlobalAlignmentTest extends AssertionsForJUnit {
     }
 
     @Test def shouldReturnMultipleOfGapPenaltyForTopRowAndLeftColumn() {
-      assertEquals((0, Left), nwGlobalAlignment.score(0,0))
+      assertEquals((0, Top), nwGlobalAlignment.score(0,0))
       assertEquals((-8, Left), nwGlobalAlignment.score(0,1))
       assertEquals((-16, Left), nwGlobalAlignment.score(0,2))
       assertEquals((-8, Top ), nwGlobalAlignment.score(1,0))
